@@ -1,0 +1,7 @@
+.filter__input:hover {
+  box-shadow: 2px 2px 2px 2px #dcdee4;
+}
+
+.filter__input {
+  display: block;
+}

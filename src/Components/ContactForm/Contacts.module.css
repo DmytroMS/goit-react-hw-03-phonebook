@@ -1,0 +1,32 @@
+.container {
+  display: block;
+  padding: 50 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* .forma {
+  max-width: 300px;
+
+} */
+
+.forma__input {
+  display: block;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.forma__btn {
+  min-width: 100px;
+  margin-left: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forma__label {
+  display: block;
+  margin: 0 auto;
+}
