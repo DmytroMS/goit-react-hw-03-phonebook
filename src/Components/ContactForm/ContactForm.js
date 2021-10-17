@@ -13,7 +13,7 @@ class InputForm extends Component {
 
 handleSubmit = e => {
         e.preventDefault();
-        this.props.addContactOnSubmit(this.state)
+  this.props.addContactOnSubmit(this.state)
         this.reset();
     };
 

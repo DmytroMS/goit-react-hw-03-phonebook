@@ -16,6 +16,24 @@ class App extends Component {
     filter: '',
   };
 
+  // Забираем контакты с локал сторедж
+
+  componentDidMount() {
+    const parsedContacts = JSON.parse(localStorage.getItem('contacts'));
+    if (parsedContacts) {
+      this.setState({ contacts: parsedContacts });
+    }
+}
+
+
+  // Добавляем контакты в локал сторедж
+  componentDidUpdate() {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+      }
+
+
+
+
   onSubmitAddContact = data => {
     if (this.state.contacts.find(contact => contact.name === data.name)) {
       return alert(`${data.name} is alredy in contacts`);
